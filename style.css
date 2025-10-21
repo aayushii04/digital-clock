@@ -1,0 +1,30 @@
+/* --- Basic Page Setup --- */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Clock Box Styling --- */
+.clock {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px 60px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 4px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  animation: glow 2s infinite alternate;
+}
+
+/* Subtle glowing animation */
+@keyframes glow {
+  from { box-shadow: 0 0 10px #fff; }
+  to { box-shadow: 0 0 25px #00f0ff; }
+}
